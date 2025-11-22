@@ -1,10 +1,11 @@
 import { Footer } from "./Components/index.js";
-import { Home } from './Screens/index.js';
+import { AppRoutes } from "./routes.jsx";
 
 function App() {
   return (
     <>
-      <Home />
+      
+      <AppRoutes />
       <Footer />
     </>
   );

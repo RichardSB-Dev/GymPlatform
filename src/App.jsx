@@ -1,13 +1,16 @@
 import { Footer } from "./Components/index.js";
-import { AppRoutes } from "./routes.jsx";
+import { AppRoutes } from "./Routes/routes.jsx";
+
+import "./App.css";
 
 function App() {
   return (
-    <>
-      
-      <AppRoutes />
+    <div className="App_container">
+      <div className="AppRoutes_container">
+        <AppRoutes />
+      </div>
       <Footer />
-    </>
+    </div>
   );
 }
 

@@ -1,3 +1,30 @@
 :root{
-    --color_fondo: #121212;
+    --color_footer_background: #000;
+    --color_foreground: #66eaff;
+    --color_foreground_focus: #3abace;
+    --color_background_foreground: #47d6ec1c;
+    --color_indirect_text: #ccc;
+    --color_background: #121212;
+    --color_white_font: #fff;
+    --color_dark_font: #000;
+
+    --font: roboto, sans-serif, arial;
+    --indirect_text_weight: normal;
+    --normal_text_weight: normal;
+    --indirect_text_size: 11px;
+    --normal_text_size: 14px;
+    --subtitle_weight: 500;
+    --subtitle_size: 20px;
+    --title_weight: bold;
+    --title_size: 32px;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
 }

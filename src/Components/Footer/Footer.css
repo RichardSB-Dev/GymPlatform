@@ -1,0 +1,20 @@
+.Footer_container{
+    background-color: var(--color_footer_background);
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    display: flex;
+    height: 70px;
+    width: 100%;
+
+    img{
+        height: 70%;
+        margin: 10px 10px;
+    }
+
+    .text{
+        color: var(--color_white_font);
+        margin-right: 10px;
+        font-size: var(--color_indirect_text);
+    }
+}

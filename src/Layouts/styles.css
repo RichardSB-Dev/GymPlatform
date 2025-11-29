@@ -1,0 +1,42 @@
+/* ************************* Private Layout ********************** */
+/* src/layouts/PrivateLayout.css */
+.private-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #0a0a0a;
+  color: #ffffff;
+}
+
+.private-content {
+  flex: 1;
+  margin-left: 240px;
+  padding: 2rem;
+  overflow-y: auto;
+  background: #0a0a0a;
+  min-height: 100vh;
+}
+
+/* Smooth scrollbar */
+.private-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.private-content::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+.private-content::-webkit-scrollbar-thumb {
+  background: #2a2a2a;
+  border-radius: 4px;
+}
+
+.private-content::-webkit-scrollbar-thumb:hover {
+  background: #3a3a3a;
+}
+
+@media (max-width: 768px) {
+  .private-content {
+    margin-left: 0;
+    padding: 1rem;
+  }
+}

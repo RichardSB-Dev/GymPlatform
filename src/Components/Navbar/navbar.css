@@ -1,0 +1,96 @@
+.nav_container{
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);;
+    background-color: var(--color_background);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    position: sticky;
+    display: flex;
+    z-index: 1000;
+    height: 70px;
+    width: 100%;
+    top: 0;
+}
+
+.logo_container{
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    height: 100%;
+
+    .logo{
+        height: 80%;
+    }
+    .name_p1, .name_p2{
+        font-weight: bold;
+        font-size: 40px;
+    }
+    .name_p1{
+        color: white;
+    }
+    .name_p2{
+        color: var(--color_foreground);
+    }
+}
+
+.buttons_container{
+    flex: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+    .btn{
+        text-decoration: none;
+        color: var(--color_indirect_text);
+        font-size: var(--subtitle_size);
+        font-weight: var(--subtitle_weight);
+    }
+    .btn:hover{
+        color: var(--color_white_font);
+        scale: 1.2;
+    }
+}
+
+.login-btns_container{
+    justify-content: space-between;
+    background-color: var(--color_background);
+    align-items: center;
+    display: flex;
+    gap: 20px;
+
+    .register_btn, .login_btn{
+        font-weight: var(--subtitle_weight);
+        font-size: var(--subtitle_size);
+        border: 1px solid #000;
+        text-decoration: none;
+        border-radius: 12px;
+        padding: 10px 20px;
+        height: 100%;
+        width: 100%;
+    }
+    .login_btn{
+        background-color: var(--color_background);
+        color: var(--color_white_font);
+    }
+    .login_btn:hover{
+        background-color: var(--color_foreground);
+        color: var(--color_dark_font)
+    }
+    .login_btn:active{
+        background-color: var(--color_foreground_focus);
+        color: var(--color_dark_font)
+    }
+
+    .register_btn{
+        background-color: var(--color_foreground);
+        color: var(--color_dark_font);
+        min-width: fit-content;
+    }
+    .register_btn:hover{
+        background-color: var(--color_foreground_focus);
+    }
+    .register_btn:active{
+        background-color: var(--color_foreground_focus);
+    }
+}

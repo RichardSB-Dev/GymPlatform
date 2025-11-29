@@ -1,0 +1,374 @@
+.food-schedule-container {
+  max-width: 1200px;
+  width: 100%;
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.food-schedule-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.food-schedule-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.food-schedule-subtitle {
+  font-size: 1rem;
+  color: #8a8a8a;
+}
+
+.btn-add-meal {
+  padding: 0.875rem 1.75rem;
+  background: #00d9ff;
+  color: #0a0a0a;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+}
+
+.btn-add-meal:hover {
+  background: #00c4e6;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 217, 255, 0.25);
+}
+
+.nutrition-overview {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.nutrition-card {
+  display: flex;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 0.75rem;
+  transition: all 0.2s ease;
+}
+
+.nutrition-card:hover {
+  border-color: #3a3a3a;
+  transform: translateY(-2px);
+}
+
+.nutrition-icon-wrapper {
+  width: 52px;
+  height: 52px;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.nutrition-icon-wrapper.calories {
+  background: rgba(255, 165, 0, 0.15);
+  color: #ffa500;
+}
+
+.nutrition-icon-wrapper.protein {
+  background: rgba(0, 217, 255, 0.15);
+  color: #00d9ff;
+}
+
+.nutrition-icon-wrapper.carbs {
+  background: rgba(74, 222, 128, 0.15);
+  color: #4ade80;
+}
+
+.nutrition-icon-wrapper.fats {
+  background: rgba(167, 139, 250, 0.15);
+  color: #a78bfa;
+}
+
+.nutrition-content {
+  flex: 1;
+}
+
+.nutrition-label {
+  font-size: 0.875rem;
+  color: #8a8a8a;
+  margin-bottom: 0.25rem;
+}
+
+.nutrition-value {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.02em;
+}
+
+.nutrition-bar {
+  width: 100%;
+  height: 6px;
+  background: #2a2a2a;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.nutrition-progress {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.nutrition-progress.calories {
+  background: #ffa500;
+}
+
+.nutrition-progress.protein {
+  background: #00d9ff;
+}
+
+.nutrition-progress.carbs {
+  background: #4ade80;
+}
+
+.nutrition-progress.fats {
+  background: #a78bfa;
+}
+
+.days-selector {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+}
+
+.day-btn {
+  padding: 0.75rem 1.5rem;
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 0.5rem;
+  color: #8a8a8a;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.day-btn:hover {
+  border-color: #3a3a3a;
+  color: #ffffff;
+}
+
+.day-btn.active {
+  background: #00d9ff;
+  border-color: #00d9ff;
+  color: #0a0a0a;
+}
+
+.meals-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.meal-section {
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  transition: all 0.2s ease;
+}
+
+.meal-section:hover {
+  border-color: #3a3a3a;
+}
+
+.meal-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.meal-type-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.meal-icon-wrapper {
+  width: 44px;
+  height: 44px;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.meal-type {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.25rem;
+}
+
+.meal-time {
+  font-size: 0.875rem;
+  color: #8a8a8a;
+}
+
+.btn-add-to-meal {
+  width: 36px;
+  height: 36px;
+  background: transparent;
+  border: 1px solid #2a2a2a;
+  border-radius: 0.5rem;
+  color: #8a8a8a;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.btn-add-to-meal:hover {
+  background: #252525;
+  border-color: #00d9ff;
+  color: #00d9ff;
+}
+
+.meals-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.meal-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #0f0f0f;
+  border: 1px solid #2a2a2a;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.meal-item:hover {
+  border-color: #3a3a3a;
+}
+
+.meal-item-content {
+  flex: 1;
+}
+
+.meal-name {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.meal-macros {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: #8a8a8a;
+  flex-wrap: wrap;
+}
+
+.macro strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.macro-divider {
+  color: #5a5a5a;
+}
+
+.meal-item-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-meal-action {
+  width: 36px;
+  height: 36px;
+  background: transparent;
+  border: 1px solid #2a2a2a;
+  border-radius: 0.5rem;
+  color: #8a8a8a;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.btn-meal-action:hover {
+  background: #252525;
+  border-color: #00d9ff;
+  color: #00d9ff;
+}
+
+.btn-meal-action.btn-danger:hover {
+  border-color: #ff4444;
+  color: #ff4444;
+}
+
+@media (max-width: 768px) {
+  .food-schedule-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .btn-add-meal {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nutrition-overview {
+    grid-template-columns: 1fr;
+  }
+
+  .days-selector {
+    justify-content: flex-start;
+  }
+
+  .meal-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .meal-item-actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}

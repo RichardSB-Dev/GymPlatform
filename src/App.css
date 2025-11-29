@@ -1,11 +1,13 @@
 .App_container{
     flex-direction: column;
     display: flex;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     background-color: var(--color_background);
 }
 
 .AppRoutes_container{
     flex: 1;
+    display: flex;
+    flex-direction: column;
 }
